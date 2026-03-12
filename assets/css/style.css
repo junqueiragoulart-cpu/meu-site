@@ -39,3 +39,9 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
+/* Layout centralizado */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
