@@ -1,3 +1,10 @@
+:root {
+    --cor-principal: #005f73;
+    --cor-secundaria: #0a9396;
+    --cor-destaque: #ee9b00;
+    --cor-fundo: #f5f5f5;
+    --cor-texto: #333333;
+}
 /* Estilo do cabeçalho e menu */
 /* Fonte padrão do site */
 body {
