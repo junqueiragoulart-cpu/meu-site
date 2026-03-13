@@ -7,6 +7,10 @@
 }
 /* Estilo do cabeçalho e menu */
 /* Fonte padrão do site */
+section {
+    margin-bottom: 30px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,6 +18,7 @@ body {
      background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
+
 header {
     background-color: var(--cor-principal);
     padding: 10px 0;
