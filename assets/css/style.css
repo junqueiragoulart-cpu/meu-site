@@ -56,9 +56,27 @@ footer {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    margin-top: 20px;
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin-top: 25px;
     margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-texto);
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 p {
