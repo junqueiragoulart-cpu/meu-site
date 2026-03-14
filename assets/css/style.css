@@ -81,6 +81,31 @@ footer .container {
     padding: 0 20px;
 }
 
+footer {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    background: linear-gradient(to right, #003a6b, #005a99);
+}
+
+footer {
+    padding: 25px 0;
+}
+
 /* Layout centralizado */
 .container {
     max-width: 900px;
