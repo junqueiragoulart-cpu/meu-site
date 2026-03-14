@@ -34,10 +34,14 @@
         </section>
         <section><a class="botao-voltar" href="sobre.html">Saiba mais sobre mim</a></section>
     </div>    
-    <footer>
-        <div class="container">    
-          © 2026 Claudio Junqueira — Junqueira Soluções
-        </div>
-    </footer> 
+<footer>
+    <div class="container">
+        © <span id="ano"></span> Claudio Junqueira — Junqueira Soluções
+    </div>
+</footer>
+
+<script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+</script>    
 </body>
 </html>
