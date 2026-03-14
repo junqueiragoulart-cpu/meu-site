@@ -26,8 +26,8 @@ header {
     align-items: center;
     padding: 10px 20px;
      /*width: 98%;        /* ESSENCIAL */
-    /*width: 100%;        /* ESSENCIAL */
-    max-width: 100%;    /* garante largura total */
+    width: 100%;        /* ESSENCIAL */
+    /*max-width: 100%;    /* garante largura total */
     gap: 40px; /* adiciona espaço entre logo e menu */
 
 }
