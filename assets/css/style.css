@@ -27,7 +27,7 @@ header {
     padding: 10px 20px;    
     /*width: 100%;        /* ESSENCIAL */
     /*max-width: 100%;    /* garante largura total */
-    gap: 10px; /* adiciona espaço entre logo e menu */
+    gap: 0px; /* adiciona espaço entre logo e menu */
 }
 /* retirar se não funcionar
 .auto-width {
