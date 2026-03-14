@@ -106,6 +106,26 @@ footer {
     padding: 25px 0;
 }
 
+/* Footer base */
+footer {
+    background: linear-gradient(to right, #003a6b, #005a99); /* degradê elegante */
+    color: white;
+    text-align: center;
+    padding: 28px 0; /* espaçamento confortável */
+    margin-top: 50px;
+    font-size: 15px;
+    border-top: 2px solid rgba(255, 255, 255, 0.25); /* linha suave */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15); /* profundidade */
+}
+
+/* Conteúdo centralizado */
+footer .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    letter-spacing: 0.4px; /* texto mais refinado */
+}
+
 /* Layout centralizado */
 .container {
     max-width: 900px;
