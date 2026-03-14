@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-     width: 90%;        /* ESSENCIAL */
+     width: 98%;        /* ESSENCIAL */
     /*width: 100%;        /* ESSENCIAL */
     /*max-width: 100%;    /* garante largura total */
     gap: 40px; /* adiciona espaço entre logo e menu */
