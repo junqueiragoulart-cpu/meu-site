@@ -1,1 +1,1 @@
-console.log("JavaScript carregado com sucesso!");
+alert("JS funcionando!");
