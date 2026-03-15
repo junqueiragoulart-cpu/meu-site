@@ -184,6 +184,32 @@ p {
 .botao-voltar:hover {
     background-color: var(--cor-destaque);
 }
+
+/* Botão de alternar tema */
+#tema-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 18px;
+    background-color: #004a7a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#tema-btn:hover {
+    background-color: #0066a3;
+    transform: scale(1.05);
+}
+
+#tema-btn:active {
+    transform: scale(0.97);
+}
+
 /* ESTUDENDO O JS */
 
 /* Tema escuro */
