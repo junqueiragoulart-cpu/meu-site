@@ -210,6 +210,15 @@ p {
     transform: scale(0.97);
 }
 
+.dark-mode #tema-btn {
+    background-color: #1f6f8b;
+    color: #ffffff;
+}
+
+.dark-mode #tema-btn:hover {
+    background-color: #2e8ab3;
+}
+
 /* ESTUDENDO O JS */
 
 /* Tema escuro */
