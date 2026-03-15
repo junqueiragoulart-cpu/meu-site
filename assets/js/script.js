@@ -18,7 +18,7 @@ if (botaoTema) {
     });
 }
 // Trocar o texto automaticamente
-const botaoTema = document.getElementById("tema-btn");
+// const botaoTema = document.getElementById("tema-btn");
 
 if (botaoTema) {
     botaoTema.addEventListener("click", function() {
