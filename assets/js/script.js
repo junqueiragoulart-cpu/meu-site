@@ -8,3 +8,12 @@ if (botao && mensagem) {
         mensagem.textContent = "Você clicou no botão! JavaScript funcionando!";
     });
 }
+
+*/APRENDENDO JS
+const botaoTema = document.getElementById("tema-btn");
+
+if (botaoTema) {
+    botaoTema.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+    });
+}
