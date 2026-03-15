@@ -184,3 +184,18 @@ p {
 .botao-voltar:hover {
     background-color: var(--cor-destaque);
 }
+*/ESTUDENDO O JS
+
+/* Tema escuro */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+.dark-mode header {
+    background-color: #002a4d;
+}
+
+.dark-mode footer {
+    background: linear-gradient(to right, #002a4d, #004a7a);
+}
