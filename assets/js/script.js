@@ -1,5 +1,5 @@
 console.log("JavaScript carregado com sucesso!");
-
+/*
 const botao = document.getElementById("botao-teste");
 const mensagem = document.getElementById("mensagem");
 
@@ -8,7 +8,7 @@ if (botao && mensagem) {
         mensagem.textContent = "Você clicou no botão! JavaScript funcionando!";
     });
 }
-
+*/
 /* APRENDENDO JS */
 const botaoTema = document.getElementById("tema-btn");
 
