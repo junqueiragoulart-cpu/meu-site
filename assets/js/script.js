@@ -9,7 +9,7 @@ if (botao && mensagem) {
     });
 }
 
-*/APRENDENDO JS
+/*APRENDENDO JS
 const botaoTema = document.getElementById("tema-btn");
 
 if (botaoTema) {
