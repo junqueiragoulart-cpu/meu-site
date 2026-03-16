@@ -328,3 +328,18 @@ input:checked + .slider:before {
 .dark-mode input:checked + .slider {
     background-color: #2e8ab3;
 }
+/* ADICIONEI AQUI */
+.tema-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tema-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* FIM DO INCREMENTO */
