@@ -11,12 +11,13 @@ if (botao && mensagem) {
 */
 /* APRENDENDO JS */
 const botaoTema = document.getElementById("tema-btn");
-
+/*
 if (botaoTema) {
     botaoTema.addEventListener("click", function() {
         document.body.classList.toggle("dark-mode");
     });
 }
+*/
 // Trocar o texto automaticamente
 // const botaoTema = document.getElementById("tema-btn");
 
