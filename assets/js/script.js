@@ -18,6 +18,7 @@ if (botaoTema) {
     });
 }
 */
+ document.body.classList.toggle("dark-mode");
 const temaSwitch = document.getElementById("tema-switch");
 
 if (temaSwitch) {
