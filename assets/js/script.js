@@ -10,9 +10,9 @@ if (botaoTema) {
         document.body.classList.toggle("dark-mode");
 
         if (document.body.classList.contains("dark-mode")) {
-            botaoTema.textContent = "☀️ Modo claro";
+            botaoTema.textContent = "🌙 Modo escuro";            
         } else {
-            botaoTema.textContent = "🌙 Modo escuro";
+            botaoTema.textContent = "☀️ Modo claro";
         }
     });
 }
