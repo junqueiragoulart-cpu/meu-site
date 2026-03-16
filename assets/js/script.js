@@ -5,6 +5,7 @@ const botaoTema = document.getElementById("tema-btn");
 // Trocar o texto automaticamente
 // const botaoTema = document.getElementById("tema-btn");
 
+/*
 if (botaoTema) {
     botaoTema.addEventListener("click", function() {
         document.body.classList.toggle("dark-mode");
@@ -15,4 +16,25 @@ if (botaoTema) {
             botaoTema.textContent = "☀️ Modo claro";
         }
     });
+}
+*/
+const temaSwitch = document.getElementById("tema-switch");
+
+if (temaSwitch) {
+    temaSwitch.addEventListener("change", function() {
+        document.body.classList.toggle("dark-mode");
+
+        // Salva a preferência
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("tema", "escuro");
+        } else {
+            localStorage.setItem("tema", "claro");
+        }
+    });
+
+    // Carrega o tema salvo
+    if (localStorage.getItem("tema") === "escuro") {
+        document.body.classList.add("dark-mode");
+        temaSwitch.checked = true;
+    }
 }
