@@ -328,7 +328,7 @@ input:checked + .slider:before {
 .dark-mode input:checked + .slider {
     background-color: #2e8ab3;
 }
-/* ADICIONA TEMA */
+
 .tema-container {
     position: absolute;
     top: 20px;
@@ -342,4 +342,3 @@ input:checked + .slider:before {
     font-size: 14px;
     font-weight: bold;
 }
-/* FIM DO INCREMENTO */
