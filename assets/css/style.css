@@ -267,8 +267,16 @@ p {
 }
 
 /* Bolinha do switch */
-.slider:before {
+.slider:before,
+slider::after {
+
     position: absolute;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+/* Ver se preciso tirar isso */
     content: "";
     height: 20px;
     width: 20px;
@@ -277,7 +285,23 @@ p {
     background-color: white;
     border-radius: 50%;
     transition: 0.4s;
+    /* até aqui */
 }
+
+/* Lua à esquerda */
+.slider::before {
+    content: "🌙";
+    left: 6px;
+}
+
+/* Sol à direita */
+.slider::after {
+    content: "☀️";
+    right: 6px;
+}
+
+
+
 
 /* Quando ativado */
 input:checked + .slider {
