@@ -12,6 +12,9 @@ section {
 }
 
 body {
+    /* coloquei essa instrução aqui */
+   transition: background-color 0.4s ease, color 0.4s ease;
+    /* fim da colagem */
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -29,6 +32,10 @@ header .container {
 /* retirar se não funcionar
 .auto-width {
     width: auto;
+}
+/* Insseri essa instrução AQUI */
+header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 /*até aqui
 header * {
