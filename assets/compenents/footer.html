@@ -1,3 +1,9 @@
-<footer>
-  <p>© 2024 Junqueira Soluções — Todos os direitos reservados.</p>
-</footer>
+<!-- FOOTER COMPONENT -->
+
+<div class="container">
+    © <span id="ano"></span> Claudio Junqueira — Junqueira Soluções
+</div>
+
+<script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
