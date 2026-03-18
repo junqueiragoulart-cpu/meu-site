@@ -37,6 +37,11 @@ header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
 */
 #header {
     background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 20px;
 }
 
 #header .container {
