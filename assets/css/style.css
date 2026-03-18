@@ -1,51 +1,44 @@
 :root {
     --cor-principal: #003a6b;
-    --cor-secundaria: #1A73E8; /* azul claro */
+    --cor-secundaria: #1A73E8;
     --cor-destaque: #EE9B00;
     --cor-fundo: #f5f5f5;
     --cor-texto: #333333;
 }
-/* Estilo do cabeçalho e menu */
-/* Fonte padrão do site */
+
+/* Estrutura geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
 section {
     margin-bottom: 30px;
 }
 
-body {
-    /* coloquei essa instrução aqui */
-   transition: background-color 0.4s ease, color 0.4s ease;
-    /* fim da colagem */
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-     background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-}
-
-header .container {
-    background-color: var(--cor-principal);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;        
-    gap: 40px; /* adiciona espaço entre logo e menu */
-}
-/* retirar se não funcionar
-.auto-width {
-    width: auto;
-}
-/* Insseri essa instrução AQUI */
 header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
-/*até aqui
-header * {
-    box-sizing: border-box;
+
+/* ---------------- HEADER ---------------- */
+
+#header .container {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 20px;
 }
 
 .logo-area img {
-    height: 80px;        /* tamanho confortável */
-    width: auto;         /* mantém proporção */
-    max-width: 180px;    /* impede de ficar larga demais */
+    height: 80px;
+    width: auto;
+    max-width: 180px;
 }
 
 nav {
@@ -72,68 +65,28 @@ nav ul li a:hover {
     color: var(--cor-destaque);
 }
 
-/* Rodapé */
-footer {
-    background-color: var(--cor-principal);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-    font-size: 14px;
-}
+/* ---------------- FOOTER ---------------- */
 
-footer .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-footer {
-    background-color: var(--cor-principal);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 14px;
-    border-top: 3px solid rgba(255, 255, 255, 0.2);
-}
-
-footer .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-    letter-spacing: 0.5px;
-}
-
-footer {
+#footer {
     background: linear-gradient(to right, #003a6b, #005a99);
-}
-
-footer {
-    padding: 25px 0;
-}
-
-/* Footer base */
-footer {
-    background: linear-gradient(to right, #003a6b, #005a99); /* degradê elegante */
     color: white;
     text-align: center;
-    padding: 28px 0; /* espaçamento confortável */
+    padding: 28px 0;
     margin-top: 50px;
     font-size: 15px;
-    border-top: 2px solid rgba(255, 255, 255, 0.25); /* linha suave */
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15); /* profundidade */
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Conteúdo centralizado */
-footer .container {
+#footer .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-    letter-spacing: 0.4px; /* texto mais refinado */
+    letter-spacing: 0.4px;
 }
 
-/* Layout centralizado */
+/* ---------------- CONTEÚDO ---------------- */
+
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -173,10 +126,6 @@ p {
     margin-bottom: 15px;
 }
 
-.container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 .botao-voltar {
     display: inline-block;
     background-color: var(--cor-secundaria);
@@ -192,142 +141,7 @@ p {
     background-color: var(--cor-destaque);
 }
 
-/* Botão de alternar tema */
-#tema-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 18px;
-    background-color: #004a7a;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#tema-btn:hover {
-    background-color: #0066a3;
-    transform: scale(1.05);
-}
-
-#tema-btn:active {
-    transform: scale(0.97);
-}
-
-.dark-mode #tema-btn {
-    background-color: #1f6f8b;
-    color: #ffffff;
-}
-
-.dark-mode #tema-btn:hover {
-    background-color: #2e8ab3;
-}
-
-/* ESTUDENDO O JS */
-
-/* Tema escuro */
-
-.dark-mode {
-    background-color: #1a1a1a;
-    color: #f1f1f1;
-}
-
-.dark-mode header {
-    background-color: #0d1b2a; /* azul bem escuro */
-}
-
-.dark-mode footer {
-    background: linear-gradient(to right, #002a4d, #004a7a);
-}
-/* Utilizando switch */
-/* Container do switch */
-.switch {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 26px;
-    display: inline-block;
-}
-
-/* Esconde o checkbox padrão */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* Trilha do switch */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    background-color: #ccc;
-    border-radius: 34px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: 0.4s;
-}
-
-/* Bolinha do switch */
-.slider:before,
-slider::after {
-
-    position: absolute;
-    font-size: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    pointer-events: none;
-/* Ver se preciso tirar isso */
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.4s;
-    /* até aqui */
-}
-
-/* Lua à esquerda */
-.slider::before {
-    content: "🌙";
-    left: 6px;
-}
-
-/* Sol à direita */
-.slider::after {
-    content: "☀️";
-    right: 6px;
-}
-
-
-
-
-/* Quando ativado */
-input:checked + .slider {
-    background-color: #004a7a;
-}
-
-/* Bolinha deslizando */
-input:checked + .slider:before {
-    transform: translateX(24px);
-}
-
-/* Tema escuro */
-.dark-mode .slider {
-    background-color: #1f6f8b;
-}
-
-.dark-mode input:checked + .slider {
-    background-color: #2e8ab3;
-}
+/* ---------------- SWITCH DE TEMA ---------------- */
 
 .tema-container {
     position: absolute;
@@ -341,4 +155,81 @@ input:checked + .slider:before {
 .tema-label {
     font-size: 14px;
     font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    display: inline-block;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+/* Corrigido: faltava o ponto antes de slider::after */
+.slider:before,
+.slider::after {
+    position: absolute;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+}
+
+.slider:before {
+    content: "🌙";
+    left: 6px;
+}
+
+.slider::after {
+    content: "☀️";
+    right: 6px;
+}
+
+input:checked + .slider {
+    background-color: #004a7a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* ---------------- TEMA ESCURO ---------------- */
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+.dark-mode #header {
+    background-color: #0d1b2a;
+}
+
+.dark-mode #footer {
+    background: linear-gradient(to right, #002a4d, #004a7a);
+}
+
+.dark-mode .slider {
+    background-color: #1f6f8b;
+}
+
+.dark-mode input:checked + .slider {
+    background-color: #2e8ab3;
 }
