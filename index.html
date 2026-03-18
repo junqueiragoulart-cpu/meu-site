@@ -7,37 +7,11 @@
     <title>Meu site - versão dev</title>
 </head>
 <body>
-<header>
-    <!-- ADICIONEI AQUI -->
-      <div class="tema-container">
-    <span class="tema-label">Tema</span>
-    <label class="switch">
-      <input type="checkbox" id="tema-switch">
-      <span class="slider"></span>
-    </label>
-      </div>
-    <!-- FIM DA INCLUSÃO -->
-    <div class="container">
-        <div class="logo-area">
-            <img src="assets/img/logo.png" alt="Logo Junqueira Soluções">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <div id="header"></div>
+
     <!-- TESTE DO BOTÃO -->
     <!--<button id="tema-btn">Alternar tema</button> -->
-<!--    
-    <label class="switch">
-      <input type="checkbox" id="tema-switch">
-      <span class="slider"></span>
-    </label>  -->  
+
     <div class="container">
         <section>
             <h1>Olá, eu sou o Claudio!</h1>
@@ -50,15 +24,12 @@
         </section>
         <section><a class="botao-voltar" href="sobre.html">Saiba mais sobre mim</a></section>
     </div>    
-<footer>
-    <div class="container">
-        © <span id="ano"></span> Claudio Junqueira — Junqueira Soluções
-    </div>
-</footer>
-
+    <div id="footer"></div>
+<!--    
 <script>
     document.getElementById("ano").textContent = new Date().getFullYear();
 </script>
+-->
 <script src="assets/js/script.js"></script>
 </body>
 </html>
