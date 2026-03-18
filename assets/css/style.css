@@ -25,7 +25,7 @@ header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------------- HEADER ---------------- */
-
+/*
 #header .container {
     background-color: var(--cor-principal);
     display: flex;
@@ -34,7 +34,14 @@ header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
     gap: 40px;
     padding: 15px 20px;
 }
+*/
+#header {
+    background-color: var(--cor-principal);
+}
 
+#header .container {
+    background-color: transparent;
+}
 .logo-area img {
     height: 80px;
     width: auto;
