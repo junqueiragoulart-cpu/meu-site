@@ -18,9 +18,8 @@ if (botaoTema) {
     });
 }
 */
- 
+loadComponent("header", "assets/components/header.html", () => { 
 const temaSwitch = document.getElementById("tema-switch");
-
 if (temaSwitch) {
     temaSwitch.addEventListener("change", function() {
        document.body.classList.toggle("dark-mode"); 
@@ -38,7 +37,7 @@ if (temaSwitch) {
         document.body.classList.add("dark-mode");
         temaSwitch.checked = true;
     }
-}
+});
 document.addEventListener("DOMContentLoaded", () => {
     const ano = document.getElementById("ano");
     if (ano) ano.textContent = new Date().getFullYear();
