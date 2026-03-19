@@ -33,11 +33,14 @@ header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
 }
 #header {
     background-color: var(--cor-principal);
+}
+#header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
     padding: 15px 20px;
+    background-color: transparent;
 }
 
 .logo-area img {
