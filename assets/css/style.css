@@ -25,16 +25,12 @@ header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------------- HEADER ---------------- */
-/*
-#header .container {
+#header {
     background-color: var(--cor-principal);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    padding: 15px 20px;
 }
-*/
+#header .container {
+    background-color: transparent;
+}
 #header {
     background-color: var(--cor-principal);
     display: flex;
@@ -44,9 +40,6 @@ header, footer, section, nav, p, h1, h2, h3, h4, h5, h6 {
     padding: 15px 20px;
 }
 
-#header .container {
-    background-color: transparent;
-}
 .logo-area img {
     height: 80px;
     width: auto;
