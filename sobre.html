@@ -30,6 +30,10 @@
     const response = await fetch(file);
     const html = await response.text();
     element.innerHTML = html;
+    if (id === "footer") {
+      const ano = document.getElementById("ano");
+      if (ano) ano.textContent = new Date().getFullYear();
+    }   
   }
 
   loadComponent("header", "assets/components/header.html");
