@@ -47,3 +47,11 @@ document.addEventListener('click', (e) => {
     document.body.classList.toggle('dark');
   }
 });
+function inicializarModoEscuro() {
+  const toggle = document.getElementById('modo-toggle');
+  if (!toggle) return;
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+}
