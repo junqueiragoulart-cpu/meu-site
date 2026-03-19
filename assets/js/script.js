@@ -42,3 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const ano = document.getElementById("ano");
     if (ano) ano.textContent = new Date().getFullYear();
 });
+document.addEventListener('click', (e) => {
+  if (e.target.matches('#modo-toggle')) {
+    document.body.classList.toggle('dark');
+  }
+});
