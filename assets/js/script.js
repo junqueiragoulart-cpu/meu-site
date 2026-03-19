@@ -37,6 +37,7 @@ if (temaSwitch) {
         document.body.classList.add("dark-mode");
         temaSwitch.checked = true;
     }
+}    
 /* }); */
 document.addEventListener("DOMContentLoaded", () => {
     const ano = document.getElementById("ano");
