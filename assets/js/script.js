@@ -18,27 +18,26 @@ if (botaoTema) {
     });
 }
 */
-loadComponent("header", "assets/components/header.html", () => { 
-const temaSwitch = document.getElementById("tema-switch");
-if (temaSwitch) {
-    temaSwitch.addEventListener("change", function() {
-       document.body.classList.toggle("dark-mode"); 
+document.addEventListener("DOMContentLoaded", () => {
+  const temaSwitch = document.getElementById("tema-switch");
 
-        // Salva a preferência
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("tema", "escuro");
-        } else {
-            localStorage.setItem("tema", "claro");
-        }
-    });
+  if (temaSwitch) {
+      temaSwitch.addEventListener("change", function() {
+         document.body.classList.toggle("dark-mode");
 
-    // Carrega o tema salvo
-    if (localStorage.getItem("tema") === "escuro") {
-        document.body.classList.add("dark-mode");
-        temaSwitch.checked = true;
-    }
-}    
- }); 
+         if (document.body.classList.contains("dark-mode")) {
+             localStorage.setItem("tema", "escuro");
+         } else {
+             localStorage.setItem("tema", "claro");
+         }
+      });
+
+      if (localStorage.getItem("tema") === "escuro") {
+          document.body.classList.add("dark-mode");
+          temaSwitch.checked = true;
+      }
+  }
+}); 
 document.addEventListener("DOMContentLoaded", () => {
     const ano = document.getElementById("ano");
     if (ano) ano.textContent = new Date().getFullYear();
