@@ -27,9 +27,18 @@
     document.getElementById("ano").textContent = new Date().getFullYear();
 </script>
 -->
+<script>
+  async function loadComponent(id, file) {
+    const element = document.getElementById(id);
+    const response = await fetch(file);
+    const html = await response.text();
+    element.innerHTML = html;
+  }
+</script>
+
+    
 <script src="assets/js/script.js"></script>
 <script>
-
   loadComponent("header", "assets/components/header.html");
   loadComponent("footer", "assets/components/footer.html");
 </script>
